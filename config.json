@@ -1,0 +1,39 @@
+{
+  "name": "Full Menu",
+  "identifier": "fullmenu",
+  "description": "",
+  "documentation": "",
+  "type": "A",
+  "icon": "menu",
+  "version": "1.0",
+  "author": "King of App",
+  "showOn": {
+    "menu": false,
+    "market": true,
+    "dragDrop": true
+  },
+  "requires": [],
+  "canContain": true,
+  "view": "modules/koa-module-fullmenu/index.html",
+  "files": ["modules/koa-module-fullmenu/controller.js"],
+  "libs": [{
+    "bower": "",
+    "src":"modules/koa-module-fullmenu/styles.html"
+  }],
+  "scope": {
+    "path": "",
+    "showicons": true,
+    "columns": 3,
+    "title": true,
+    "logo": ""
+  },
+  "config": [{
+    "type": "checkbox",
+    "key": "showicons",
+    "templateOptions": {
+      "description": "Show menu icons",
+      "label": "Menu icons"
+    }
+  }],
+  "descriptionShort": ""
+}
