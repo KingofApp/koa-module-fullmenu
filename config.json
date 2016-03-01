@@ -16,10 +16,18 @@
   "canContain": true,
   "view": "modules/koa-module-fullmenu/index.html",
   "files": ["modules/koa-module-fullmenu/controller.js"],
-  "libs": [{
-    "bower": "",
-    "src":"modules/koa-module-fullmenu/styles.html"
-  }],
+  "libs": [
+    {
+      "bower": {
+        "PolymerElements/iron-flex-layout": "^1.3.0"
+      },
+      "src": "../bower_components/iron-flex-layout/iron-flex-layout.html"
+    },
+    {
+      "bower": "",
+      "src":"modules/koa-module-fullmenu/styles.html"
+    }
+  ],
   "scope": {
     "path": "",
     "showicons": true,
