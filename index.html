@@ -8,7 +8,7 @@
 
   <div id="menu" ng-class="fullmenu.shown ? 'shown' : ''">
     <a href="{{module.url}}" ng-repeat="module in fullmenu.modules" tabindex="-1">
-      <koa-item class="items">
+      <koa-item class="item"  style="background-image: url('{{module.backgroundImage}}'); background-color: {{module.backgroundColor}};">
         <span>{{module.text}} {{fullmenu.randomColor}}</span>
         <koa-icon icon="{{module.icon}}" ng-if="module.icon" class="icon"></koa-icon>
       </koa-item>

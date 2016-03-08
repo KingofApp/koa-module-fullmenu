@@ -39,12 +39,6 @@
     @apply(--layout-end-justified);
   }
 
-  .fullmenu #menu a,
-  .fullmenu #menu a .items {
-    @apply(--layout);
-    @apply(--layout-flex);
-  }
-
   .fullmenu #menu a {
     @apply(--layout);
     @apply(--layout-flex);
@@ -55,7 +49,14 @@
     background-color: var(--primary-background-color);
   }
 
-  .fullmenu #menu a span {
+  .fullmenu #menu a .item {
+    @apply(--layout);
+    @apply(--layout-flex);
+
+    background-size: cover;
+  }
+
+  .fullmenu #menu a .item span {
     @apply(--layout);
     @apply(--layout-flex);
   }
