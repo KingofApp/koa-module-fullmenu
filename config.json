@@ -29,7 +29,27 @@
     }
   ],
   "scope": {
-    "path": "",
+    "sections": [
+      "",
+      ""
+    ],
+    "backgroundImages": [
+      "",
+      ""
+    ],
+    "backgroundColors": [
+      "",
+      ""
+    ],
+    "headerShown": true,
+    "headerBackgroundImage": "",
+    "headerBackgroundColor": "",
+    "headerReverse": false,
+    "headerTitle": "",
+    "headerTitleShown": true,
+    "headerLogo": "",
+    "headerLogoShown": true,
+    "headerAlignment": "left",
     "showicons": true,
     "columns": 3,
     "title": true,
