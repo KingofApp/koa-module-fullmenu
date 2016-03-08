@@ -7,6 +7,13 @@
   </koa-toolbar>
 
   <div id="menu" ng-class="fullmenu.shown ? 'shown' : ''">
+    <div id="header" ng-if="fullmenu.modulescope.headerShown" ng-class="[fullmenu.modulescope.headerAlignment, fullmenu.modulescope.headerReverse ? 'reverse' : '']" style="background-image: url('{{fullmenu.modulescope.headerBackgroundImage}}'); background-color: {{fullmenu.modulescope.headerBackgroundColor}};">
+      <div class="logo" ng-if="fullmenu.modulescope.headerLogoShown">
+        <img ng-src="{{fullmenu.modulescope.headerLogo}}">
+      </div>
+      <span class="title" ng-if="fullmenu.modulescope.headerTitleShown">{{fullmenu.modulescope.headerTitle}}</span>
+    </div>
+
     <a href="{{module.url}}" ng-repeat="module in fullmenu.modules" tabindex="-1">
       <koa-item class="item"  style="background-image: url('{{module.backgroundImage}}'); background-color: {{module.backgroundColor}};">
         <span>{{module.text}} {{fullmenu.randomColor}}</span>

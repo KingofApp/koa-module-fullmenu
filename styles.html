@@ -60,4 +60,31 @@
     @apply(--layout);
     @apply(--layout-flex);
   }
+
+  .fullmenu #menu #header {
+    @apply(--layout-vertical);
+
+    background-color: #FFFFFF;
+    padding: 1em;
+  }
+
+  .fullmenu #menu #header.reverse {
+    @apply(--layout-vertical-reverse);
+  }
+
+  .fullmenu #menu #header.left {
+    @apply(--layout-start);
+  }
+
+  .fullmenu #menu #header.center {
+    @apply(--layout-center);
+  }
+
+  .fullmenu #menu #header.right {
+    @apply(--layout-end);
+  }
+
+  .fullmenu #menu #header .logo img {
+    max-height: 60px;
+  }
 </style>
