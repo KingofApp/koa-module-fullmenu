@@ -2,8 +2,8 @@
 
   <koa-toolbar>
     <koa-icon-button icon="{{fullmenu.icon}}" ng-click="showMenu()"></koa-icon-button>
-    <img id="logo" ng-src="{{fullmenu.modulescope.logo}}" ng-if="fullmenu.modulescope.logo">
-    <span class="title" ng-if="fullmenu.modulescope.title">{{toolbar.title}}</span>
+    <img id="logo" ng-src="{{fullmenu.modulescope.toolbarLogo}}" ng-if="fullmenu.modulescope.toolbarLogo">
+    <span class="title" ng-if="fullmenu.modulescope.toolbarTitle">{{toolbar.toolbarTitle}}</span>
   </koa-toolbar>
 
   <div id="menu" ng-class="fullmenu.shown ? 'shown' : ''">

@@ -50,8 +50,8 @@
     "headerLogo": "",
     "headerAlignment": "left",
     "showicons": true,
-    "title": true,
-    "logo": ""
+    "toolbarTitle": true,
+    "toolbarLogo": ""
   },
   "config": [
     {
