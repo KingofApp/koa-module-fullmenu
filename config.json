@@ -1,8 +1,8 @@
 {
   "name": "Full Menu",
   "identifier": "fullmenu",
-  "description": "",
-  "descriptionShort": "",
+  "description": "Menu buttons occupying the width of the screen. It incorporates a header with the logo and the name of the company.",
+  "descriptionShort": "Menu full width",
   "documentation": "",
   "type": "A",
   "icon": "menu",
