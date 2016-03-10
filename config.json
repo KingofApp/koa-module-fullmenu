@@ -29,18 +29,9 @@
     }
   ],
   "scope": {
-    "sections": [
-      "",
-      ""
-    ],
-    "backgroundImages": [
-      "",
-      ""
-    ],
-    "backgroundColors": [
-      "",
-      ""
-    ],
+    "sections": [],
+    "backgroundImages": [],
+    "backgroundColors": [],
     "headerShown": true,
     "headerBackgroundImage": "",
     "headerBackgroundColor": "",
