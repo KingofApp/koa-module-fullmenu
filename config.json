@@ -2,6 +2,7 @@
   "name": "Full Menu",
   "identifier": "fullmenu",
   "description": "",
+  "descriptionShort": "",
   "documentation": "",
   "type": "A",
   "icon": "menu",
@@ -21,7 +22,7 @@
       "bower": {
         "PolymerElements/iron-flex-layout": "^1.3.0"
       },
-      "src": "../bower_components/iron-flex-layout/iron-flex-layout.html"
+      "src": "bower_components/iron-flex-layout/iron-flex-layout.html"
     },
     {
       "bower": "",
@@ -175,6 +176,5 @@
         "pattern": "(https?://)([/\\w.()-]*).*"
       }
     }
-  ],
-  "descriptionShort": ""
+  ]
 }
