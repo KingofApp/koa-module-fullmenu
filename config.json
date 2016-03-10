@@ -150,7 +150,7 @@
       }
     },
     {
-      "key": "title",
+      "key": "toolbarTitle",
       "type": "checkbox",
       "templateOptions": {
         "label": "Toolbar title",
@@ -158,7 +158,7 @@
       }
     },
     {
-      "key": "logo",
+      "key": "toolbarLogo",
       "type": "input",
       "templateOptions": {
         "label": "Toolbar logo",
