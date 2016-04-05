@@ -39,12 +39,6 @@
     @apply(--layout-end-justified);
   }
 
-  .fullmenu #menu a,
-  .fullmenu #menu a .items {
-    @apply(--layout);
-    @apply(--layout-flex);
-  }
-
   .fullmenu #menu a {
     @apply(--layout);
     @apply(--layout-flex);
@@ -55,8 +49,42 @@
     background-color: var(--primary-background-color);
   }
 
-  .fullmenu #menu a span {
+  .fullmenu #menu a .item {
     @apply(--layout);
     @apply(--layout-flex);
+
+    background-size: cover;
+  }
+
+  .fullmenu #menu a .item span {
+    @apply(--layout);
+    @apply(--layout-flex);
+  }
+
+  .fullmenu #menu #header {
+    @apply(--layout-vertical);
+
+    background-color: #FFFFFF;
+    padding: 1em;
+  }
+
+  .fullmenu #menu #header.reverse {
+    @apply(--layout-vertical-reverse);
+  }
+
+  .fullmenu #menu #header.left {
+    @apply(--layout-start);
+  }
+
+  .fullmenu #menu #header.center {
+    @apply(--layout-center);
+  }
+
+  .fullmenu #menu #header.right {
+    @apply(--layout-end);
+  }
+
+  .fullmenu #menu #header .logo img {
+    max-height: 60px;
   }
 </style>

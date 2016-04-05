@@ -2,15 +2,22 @@
 
   <koa-toolbar>
     <koa-icon-button icon="{{fullmenu.icon}}" ng-click="showMenu()"></koa-icon-button>
-    <img id="logo" ng-src="{{fullmenu.modulescope.logo}}" ng-if="fullmenu.modulescope.logo">
-    <span class="title" ng-if="fullmenu.modulescope.title">{{toolbar.title}}</span>
+    <img id="logo" ng-src="{{fullmenu.modulescope.toolbarLogo}}" ng-if="fullmenu.modulescope.toolbarLogo">
+    <span class="title" ng-if="fullmenu.modulescope.toolbarTitle">{{toolbar.title}}</span>
   </koa-toolbar>
 
   <div id="menu" ng-class="fullmenu.shown ? 'shown' : ''">
+    <div id="header" ng-if="fullmenu.modulescope.headerShown" ng-class="[fullmenu.modulescope.headerAlignment, fullmenu.modulescope.headerReverse ? 'reverse' : '']" style="background-image: url('{{fullmenu.modulescope.headerBackgroundImage}}'); background-color: {{fullmenu.modulescope.headerBackgroundColor}};">
+      <div class="logo" ng-if="fullmenu.modulescope.headerLogo">
+        <img ng-src="{{fullmenu.modulescope.headerLogo}}">
+      </div>
+      <span class="title" ng-if="fullmenu.modulescope.headerTitle">{{fullmenu.modulescope.headerTitle}}</span>
+    </div>
+
     <a href="{{module.url}}" ng-repeat="module in fullmenu.modules" tabindex="-1">
-      <koa-item class="items">
-        <span>{{module.text}} {{fullmenu.randomColor}}</span>
-        <koa-icon icon="{{module.icon}}" ng-if="module.icon" class="icon"></koa-icon>
+      <koa-item class="item"  style="background-image: url('{{module.backgroundImage}}'); background-color: {{module.backgroundColor}};">
+        <span>{{module.text}}</span>
+        <koa-icon icon="{{module.icon}}" ng-if="fullmenu.modulescope.showIcons" class="icon"></koa-icon>
       </koa-item>
     </a>
   </div>
