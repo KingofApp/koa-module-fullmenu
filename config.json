@@ -61,7 +61,7 @@
     "menuItems": [],
     "backgroundImages": [],
     "backgroundColors": [],
-    "headerShown": true,
+    "headerShown": false,
     "headerBackgroundImage": "",
     "headerBackgroundColor": "",
     "headerReverse": false,
