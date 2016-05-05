@@ -11,10 +11,19 @@
     // Register upper level modules
     structureService.registerModule($location, $scope, 'fullmenu');
 
+    $scope.showBack = false;
+
+    if(structureService.getMenuItems().indexOf($location.$$path) === -1 && $rootScope.current != 'fullmenu'){
+      $scope.showBack = true;
+    }
+    $scope.goBack = function() {
+      window.history.back()
+    };
+
     var moduleScope = $scope.fullmenu;
     var moduleConfig = $scope.fullmenu.modulescope;
 
-    $scope.showMenu = function() {
+    $scope.showFullMenu = function() {
       moduleScope.shown = moduleScope.shown ? false : true;
     }
 

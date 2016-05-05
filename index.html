@@ -1,7 +1,8 @@
 <div class="fullmenu" ng-controller="FullMenuController">
 
   <koa-toolbar>
-    <koa-icon-button icon="{{fullmenu.icon}}" ng-click="showMenu()"></koa-icon-button>
+    <koa-icon-button icon="{{fullmenu.icon}}" ng-if="!showBack" ng-click="showFullMenu()"></koa-icon-button>
+    <koa-icon-button icon="arrow-back" ng-click="goBack()" ng-if="showBack"></koa-icon-button>
     <img id="logo" ng-src="{{fullmenu.modulescope.toolbarLogo}}" ng-if="fullmenu.modulescope.toolbarLogo">
     <span class="title" ng-if="fullmenu.modulescope.toolbarTitle">{{toolbar.title}}</span>
   </koa-toolbar>
@@ -24,7 +25,7 @@
 
   <div id="main">
     <!-- moduleIdentifier + Template -->
-    <div ng-include="fullmenuTemplate"></div>
+    <div ng-include="fullmenuTemplate" class='template'></div>
   </div>
 
 </div>
