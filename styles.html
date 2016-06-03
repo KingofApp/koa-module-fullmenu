@@ -1,16 +1,17 @@
 <style is="custom-style">
   .fullmenu {
     @apply(--layout-vertical);
-    @apply(--layout-fullbleed);
+    /*@apply(--layout-fullbleed);*/
+    height:100%;
   }
-
   .fullmenu #logo {
     max-height: 30px;
   }
 
-  .fullmenu #main {
+  .fullmenu > #main {
     @apply(--layout-vertical);
-    @apply(--layout-flex);
+    height: 100%;
+    width: 100%;
 
     position: relative;
 
@@ -21,9 +22,9 @@
     min-height: 0;
   }
 
-  .fullmenu #menu {
+  .fullmenu > #menu {
     position: fixed;
-    z-index: 9;
+    z-index: 8;
     top: 0;
     bottom: 0;
 
@@ -39,7 +40,7 @@
     @apply(--layout-end-justified);
   }
 
-  .fullmenu #menu a {
+  .fullmenu > #menu a {
     @apply(--layout);
     @apply(--layout-flex);
 
@@ -49,7 +50,7 @@
     background-color: var(--primary-background-color);
   }
 
-  .fullmenu #menu a .item {
+  .fullmenu > #menu a .item {
     @apply(--layout);
     @apply(--layout-flex);
 
