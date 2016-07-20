@@ -2,7 +2,7 @@
   "name": "Full Menu",
   "identifier": "fullmenu",
   "type": "A",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "King of App",
   "category": [
     "menu"
@@ -67,6 +67,7 @@
     "headerLogo": "",
     "headerAlignment": "left",
     "showicons": true,
+    "iconPosition": "right",
     "toolbarTitle": true,
     "toolbarLogo": ""
   },
@@ -169,6 +170,18 @@
       "templateOptions": {
         "description": "Show menu icons",
         "label": "Menu icons"
+      }
+    },
+    {
+      "type": "select",
+      "key": "iconPosition",
+      "templateOptions": {
+        "description": "Icon position",
+        "label": "Position",
+        "options": [
+          {"name": "Left", "value": "left" },
+          {"name": "Right", "value": "right" }
+        ]
       }
     },
     {
