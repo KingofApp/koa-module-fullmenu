@@ -2,7 +2,7 @@
   "name": "Full Menu",
   "identifier": "fullmenu",
   "type": "A",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "author": "King of App",
   "category": [
     "menu"
@@ -59,6 +59,8 @@
   ],
   "scope": {
     "menuItems": [],
+    "titleClass": "align-right",
+    "imgClass": "align-left",
     "headerShown": false,
     "headerBackgroundImage": "",
     "headerBackgroundColor": "",
@@ -200,6 +202,37 @@
         "description": "The URL of the toolbar logo image",
         "pattern": "(https?://)([/\\w.()-]*).*"
       }
+    }, {
+    "key": "titleClass",
+    "type": "select",
+    "templateOptions": {
+      "label": "Toolbar title alignment",
+      "options": [{
+        "name": "Left",
+        "value": "align-left"
+      }, {
+        "name": "Right",
+        "value": "align-right"
+      }, {
+        "name": "Center",
+        "value": "align-center"
+      }]
     }
-  ]
+  }, {
+    "key": "imgClass",
+    "type": "select",
+    "templateOptions": {
+      "label": "Toolbar logo alignment",
+      "options": [{
+        "name": "Left",
+        "value": "align-left"
+      }, {
+        "name": "Right",
+        "value": "align-right"
+      }, {
+        "name": "Center",
+        "value": "align-center"
+      }]
+    }
+  }]
 }
