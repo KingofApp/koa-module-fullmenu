@@ -21,6 +21,7 @@
         <span ng-if="fullmenu.modulescope.iconPosition !== 'left'">{{module.text}}</span>
         <div class="backgroud" style="display: block; position: absolute; background-color: rgba(0,0,0,.4);height: 100%;width: 100%;left: 0; top:0"></div>
         <koa-icon ng-class="fullmenu.modulescope.iconPosition" icon="{{module.icon}}" ng-if="fullmenu.modulescope.showicons" class="icon big-icons"></koa-icon>
+        <koa-icon ng-class="fullmenu.modulescope.iconPosition" icon="arrow-forward" ng-if="!fullmenu.modulescope.showicons" class="icon big-icons"></koa-icon>
         <span ng-if="fullmenu.modulescope.iconPosition === 'left'">{{module.text}}</span>
       </koa-item>
     </a>
