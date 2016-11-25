@@ -2,7 +2,7 @@
   "name": "Full Menu",
   "identifier": "fullmenu",
   "type": "A",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "author": "King of App",
   "category": [
     "menu"
@@ -25,8 +25,8 @@
     "es-ES" : "Menú full width"
   },
   "documentation": {
-    "en-US" : "",
-    "es-ES" : ""
+    "es-ES": "modules/fullmenu/documentation/es_ES.md",
+    "en-US": "modules/fullmenu/documentation/en_US.md"
   },
   "images" : {
     "list" : "modules/fullmenu/images/fullmenu_list.png",
