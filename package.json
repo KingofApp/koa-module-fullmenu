@@ -1,6 +1,6 @@
 {
   "name": "koapp-module-fullmenu",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Menu full width",
   "directories": {
     "test": "test"
