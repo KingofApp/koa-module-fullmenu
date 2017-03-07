@@ -17,12 +17,12 @@
   "canContain": true,
   "icon": "menu",
   "description": {
-    "en-US" : "Menu buttons occupying the width of the screen. It incorporates a header with the logo and the name of the company.",
-    "es-ES" : "Menú con botones que ocupan el ancho de la pantalla. Incorpora una cabecera con el logo y el nombre de la compañía."
+    "en-US" : "Use this menu with buttons that occupy the width of the screen to organize your content in a classic and attractive way. Take advantage of its maximum functionality incorporating a header with the logo and the name of the company.",
+    "es-ES" : "Utiliza este menú con botones que ocupan el ancho de la pantalla para organizar tu contenido de una forma clásica y atractiva. Aprovecha su máxima funcionalidad incorporando una cabecera con el logo y el nombre de la compañía."
   },
   "descriptionShort": {
-    "en-US" : "Menu full width",
-    "es-ES" : "Menú full width"
+    "en-US" : "Organize your content in a classic and attractive way with this menu.",
+    "es-ES" : "Organiza tu contenido de forma clásica y atractiva con este menú."
   },
   "documentation": {
     "es-ES": "modules/fullmenu/documentation/es_ES.md",
