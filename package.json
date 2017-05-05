@@ -1,6 +1,6 @@
 {
   "name": "koapp-module-fullmenu",
-  "version": "1.0.11",
+  "version": "1.0.14",
   "description": "Menu full width",
   "directories": {
     "test": "test"
@@ -31,7 +31,7 @@
     "jsesc": "^2.2.0",
     "protractor": "^2.0.0"
   },
-  "author": "King of App",
+  "author": "Koapp <koappnpmpublisher@gmail.com> (http://www.kingofapp.com)",
   "license": "MIT",
   "keywords": [
     "koapp",
