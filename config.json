@@ -1,238 +1,268 @@
 {
-  "name": "Full Menu",
-  "identifier": "fullmenu",
-  "type": "A",
-  "version": "1.0.14",
-  "author": "King of App",
-  "category": [
-    "menu"
-  ],
-  "platforms" : [
-    "android",
-    "ios",
-    "windows"
-  ],
-  "price": 0,
-  "subscription": false,
-  "canContain": true,
-  "icon": "menu",
-  "description": {
-    "en-US" : "Use this menu with buttons that occupy the width of the screen to organize your content in a classic and attractive way. Take advantage of its maximum functionality incorporating a header with the logo and the name of the company.",
-    "es-ES" : "Utiliza este menú con botones que ocupan el ancho de la pantalla para organizar tu contenido de una forma clásica y atractiva. Aprovecha su máxima funcionalidad incorporando una cabecera con el logo y el nombre de la compañía."
-  },
-  "descriptionShort": {
-    "en-US" : "Organize your content in a classic and attractive way with this menu.",
-    "es-ES" : "Organiza tu contenido de forma clásica y atractiva con este menú."
-  },
-  "documentation": {
-    "es-ES": "modules/fullmenu/documentation/es_ES.md",
-    "en-US": "modules/fullmenu/documentation/en_US.md"
-  },
-  "images" : {
-    "list" : "modules/fullmenu/images/fullmenu_list.png",
-    "screenshots" : [
-      "modules/fullmenu/images/fullmenu_screenshot01.png",
-      "modules/fullmenu/images/fullmenu_screenshot02.png"
+    "name": "Full Menu",
+    "identifier": "fullmenu",
+    "type": "A",
+    "version": "1.0.15",
+    "author": "King of App",
+    "category": [
+        "menu"
     ],
-    "popover" : "modules/fullmenu/images/fullmenu_popover.png",
-    "banner" : "modules/fullmenu/images/fullmenu_popover.png",
-    "logo" : "modules/fullmenu/images/fullmenu_icon.png"
-  },
-  "showOn": {
-    "menu": false,
-    "market": true,
-    "dragDrop": true
-  },
-  "requires": [],
-  "view": "modules/fullmenu/index.html",
-  "files": [
-    "modules/fullmenu/controller.js",
-    "modules/fullmenu/styles.html"
-  ],
-  "libs": [
-    {
-      "bower": {
-        "PolymerElements/iron-flex-layout": "^1.3.0"
-      },
-      "src": "bower_components/iron-flex-layout/iron-flex-layout.html"
-    }
-  ],
-  "scope": {
-    "menuItems": [],
-    "titleClass": "align-right",
-    "imgClass": "align-left",
-    "headerShown": false,
-    "headerBackgroundImage": "",
-    "headerBackgroundColor": "",
-    "headerReverse": false,
-    "headerTitle": "",
-    "headerLogo": "",
-    "headerAlignment": "left",
-    "showicons": true,
-    "iconPosition": "right",
-    "toolbarTitle": true,
-    "toolbarLogo": ""
-  },
-  "config": [
-    {
-      "type": "repeatSection",
-      "key": "menuItems",
-      "templateOptions": {
-        "label": "Items",
-        "btnText": "Add another item to the menu",
-        "fields": [{
-          "type": "select",
-          "key": "path",
-          "templateOptions": {
-            "label": "Path",
-            "required": true
-          }
-        }, {
-          "type": "input",
-          "key": "bgImage",
-          "templateOptions": {
-            "label": "Background Image URL",
-            "placeholder": "(Optional)"
-          }
-        }, {
-          "type": "input",
-          "key": "bgColor",
-          "templateOptions": {
-            "label": "Background Color",
-            "placeholder": "(Optional)"
-          }
-        }]
-      }
+    "platforms": [
+        "android",
+        "ios",
+        "windows"
+    ],
+    "price": 0,
+    "subscription": false,
+    "canContain": true,
+    "icon": "menu",
+    "description": {
+        "en-US": "Use this menu with buttons that occupy the width of the screen to organize your content in a classic and attractive way. Take advantage of its maximum functionality incorporating a header with the logo and the name of the company.",
+        "es-ES": "Utiliza este menú con botones que ocupan el ancho de la pantalla para organizar tu contenido de una forma clásica y atractiva. Aprovecha su máxima funcionalidad incorporando una cabecera con el logo y el nombre de la compañía."
     },
-    {
-      "key": "headerShown",
-      "type": "checkbox",
-      "templateOptions": {
-        "label": "Header",
-        "description": "Show header"
-      }
+    "descriptionShort": {
+        "en-US": "Organize your content in a classic and attractive way with this menu.",
+        "es-ES": "Organiza tu contenido de forma clásica y atractiva con este menú."
     },
-    {
-      "key": "headerBackgroundImage",
-      "type": "input",
-      "templateOptions": {
-        "label": "Header image",
-        "description": "The URL of the header background image",
-        "pattern": "(https?://)([/\\w.()-]*).*"
-      }
+    "documentation": {
+        "es-ES": "modules/fullmenu/documentation/es_ES.md",
+        "en-US": "modules/fullmenu/documentation/en_US.md"
     },
-    {
-      "key": "headerBackgroundColor",
-      "type": "input",
-      "templateOptions": {
-        "label": "Header color",
-        "description": "The header background color"
-      }
+    "images": {
+        "list": "modules/fullmenu/images/fullmenu_list.png",
+        "screenshots": [
+            "modules/fullmenu/images/fullmenu_screenshot01.png",
+            "modules/fullmenu/images/fullmenu_screenshot02.png"
+        ],
+        "popover": "modules/fullmenu/images/fullmenu_popover.png",
+        "banner": "modules/fullmenu/images/fullmenu_popover.png",
+        "logo": "modules/fullmenu/images/fullmenu_icon.png"
     },
-    {
-      "key": "headerReverse",
-      "type": "checkbox",
-      "templateOptions": {
-        "label": "Header reverse",
-        "description": "Reverse order of logo and title"
-      }
+    "showOn": {
+        "menu": false,
+        "market": true,
+        "dragDrop": true
     },
-    {
-      "key": "headerTitle",
-      "type": "input",
-      "templateOptions": {
-        "label": "Header title",
-        "description": "The header title"
-      }
+    "requires": [],
+    "view": "modules/fullmenu/index.html",
+    "files": [
+        "modules/fullmenu/controller.js",
+        "modules/fullmenu/styles.html"
+    ],
+    "libs": [
+        {
+            "bower": {
+                "PolymerElements/iron-flex-layout": "^1.3.0"
+            },
+            "src": "bower_components/iron-flex-layout/iron-flex-layout.html"
+        }
+    ],
+    "scope": {
+        "menuItems": [],
+        "titleClass": "align-right",
+        "imgClass": "align-left",
+        "headerShown": false,
+        "headerBackgroundImage": "",
+        "headerBackgroundColor": "",
+        "headerReverse": false,
+        "headerTitle": "",
+        "headerLogo": "",
+        "headerAlignment": "left",
+        "showicons": true,
+        "iconPosition": "right",
+        "toolbarTitle": true,
+        "toolbarLogo": ""
     },
-    {
-      "key": "headerLogo",
-      "type": "input",
-      "templateOptions": {
-        "label": "Header logo",
-        "description": "The URL of the header logo image",
-        "pattern": "(https?://)([/\\w.()-]*).*"
-      }
-    },
-    {
-      "key": "headerAlignment",
-      "type": "select",
-      "templateOptions": {
-        "label": "Header alignment",
-        "options": [
-          {"name": "left", "value": "left"},
-          {"name": "center", "value": "center"},
-          {"name": "right", "value": "right"}
-        ]
-      }
-    },
-    {
-      "key": "showicons",
-      "type": "checkbox",
-      "templateOptions": {
-        "description": "Show menu icons",
-        "label": "Menu icons"
-      }
-    },
-    {
-      "type": "select",
-      "key": "iconPosition",
-      "templateOptions": {
-        "description": "Icon position",
-        "label": "Position",
-        "options": [
-          {"name": "Left", "value": "left" },
-          {"name": "Right", "value": "right" }
-        ]
-      }
-    },
-    {
-      "key": "toolbarTitle",
-      "type": "checkbox",
-      "templateOptions": {
-        "label": "Toolbar title",
-        "description": "Show the toolbar title"
-      }
-    },
-    {
-      "key": "toolbarLogo",
-      "type": "input",
-      "templateOptions": {
-        "label": "Toolbar logo",
-        "description": "The URL of the toolbar logo image",
-        "pattern": "(https?://)([/\\w.()-]*).*"
-      }
-    }, {
-    "key": "titleClass",
-    "type": "select",
-    "templateOptions": {
-      "label": "Toolbar title alignment",
-      "options": [{
-        "name": "Left",
-        "value": "align-left"
-      }, {
-        "name": "Right",
-        "value": "align-right"
-      }, {
-        "name": "Center",
-        "value": "align-center"
-      }]
-    }
-  }, {
-    "key": "imgClass",
-    "type": "select",
-    "templateOptions": {
-      "label": "Toolbar logo alignment",
-      "options": [{
-        "name": "Left",
-        "value": "align-left"
-      }, {
-        "name": "Right",
-        "value": "align-right"
-      }, {
-        "name": "Center",
-        "value": "align-center"
-      }]
-    }
-  }]
+    "config": [
+        {
+            "type": "repeatSection",
+            "key": "menuItems",
+            "templateOptions": {
+                "label": "Items",
+                "btnText": "Add another item to the menu",
+                "fields": [
+                    {
+                        "type": "select",
+                        "key": "path",
+                        "templateOptions": {
+                            "label": "Path",
+                            "required": true
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "key": "bgImage",
+                        "templateOptions": {
+                            "label": "Background Image URL",
+                            "placeholder": "(Optional)"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "key": "bgColor",
+                        "templateOptions": {
+                            "label": "Background Color",
+                            "placeholder": "(Optional)"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "key": "headerShown",
+            "type": "checkbox",
+            "templateOptions": {
+                "label": "Header",
+                "description": "Show header"
+            }
+        },
+        {
+            "key": "headerBackgroundImage",
+            "type": "input",
+            "templateOptions": {
+                "label": "Header image",
+                "description": "The URL of the header background image",
+                "pattern": "(https?://)([/\\w.()-]*).*"
+            }
+        },
+        {
+            "key": "headerBackgroundColor",
+            "type": "input",
+            "templateOptions": {
+                "label": "Header color",
+                "description": "The header background color"
+            }
+        },
+        {
+            "key": "headerReverse",
+            "type": "checkbox",
+            "templateOptions": {
+                "label": "Header reverse",
+                "description": "Reverse order of logo and title"
+            }
+        },
+        {
+            "key": "headerTitle",
+            "type": "input",
+            "templateOptions": {
+                "label": "Header title",
+                "description": "The header title"
+            }
+        },
+        {
+            "key": "headerLogo",
+            "type": "input",
+            "templateOptions": {
+                "label": "Header logo",
+                "description": "The URL of the header logo image",
+                "pattern": "(https?://)([/\\w.()-]*).*"
+            }
+        },
+        {
+            "key": "headerAlignment",
+            "type": "select",
+            "templateOptions": {
+                "label": "Header alignment",
+                "options": [
+                    {
+                        "name": "left",
+                        "value": "left"
+                    },
+                    {
+                        "name": "center",
+                        "value": "center"
+                    },
+                    {
+                        "name": "right",
+                        "value": "right"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "showicons",
+            "type": "checkbox",
+            "templateOptions": {
+                "description": "Show menu icons",
+                "label": "Menu icons"
+            }
+        },
+        {
+            "type": "select",
+            "key": "iconPosition",
+            "templateOptions": {
+                "description": "Icon position",
+                "label": "Position",
+                "options": [
+                    {
+                        "name": "Left",
+                        "value": "left"
+                    },
+                    {
+                        "name": "Right",
+                        "value": "right"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "toolbarTitle",
+            "type": "checkbox",
+            "templateOptions": {
+                "label": "Toolbar title",
+                "description": "Show the toolbar title"
+            }
+        },
+        {
+            "key": "toolbarLogo",
+            "type": "input",
+            "templateOptions": {
+                "label": "Toolbar logo",
+                "description": "The URL of the toolbar logo image",
+                "pattern": "(https?://)([/\\w.()-]*).*"
+            }
+        },
+        {
+            "key": "titleClass",
+            "type": "select",
+            "templateOptions": {
+                "label": "Toolbar title alignment",
+                "options": [
+                    {
+                        "name": "Left",
+                        "value": "align-left"
+                    },
+                    {
+                        "name": "Right",
+                        "value": "align-right"
+                    },
+                    {
+                        "name": "Center",
+                        "value": "align-center"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "imgClass",
+            "type": "select",
+            "templateOptions": {
+                "label": "Toolbar logo alignment",
+                "options": [
+                    {
+                        "name": "Left",
+                        "value": "align-left"
+                    },
+                    {
+                        "name": "Right",
+                        "value": "align-right"
+                    },
+                    {
+                        "name": "Center",
+                        "value": "align-center"
+                    }
+                ]
+            }
+        }
+    ]
 }
